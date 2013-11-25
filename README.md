@@ -32,7 +32,6 @@ And run composer to update your dependencies:
 The following gateways are provided by this package:
 
 * Afterpay
-* Afterpay
 
 For general usage instructions, please see the main [Omnipay](https://github.com/omnipay/omnipay)
 repository.
