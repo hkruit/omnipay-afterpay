@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Date: Sun, 13 Oct 2013 23:55:44 GMT
+Server: Apache/2.2.16 (Debian)
+Vary: Accept-Encoding
+Content-Length: 548
+Content-Type: text/xml;charset=utf-8
+
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:validateAndCheckB2COrderResponse xmlns:ns2="http://www.afterpay.nl/ad3/"><return><afterPayOrderReference>c0f37098c09475da74ff0aa9ac6a72</afterPayOrderReference><checksum>6584bd6998a30432bfe5624b89cacd0d</checksum><resultId>0</resultId><statusCode>A</statusCode><timestampIn>1381708544946</timestampIn><timestampOut>1381708545038</timestampOut><transactionId>74035</transactionId></return></ns2:validateAndCheckB2COrderResponse></S:Body></S:Envelope>
