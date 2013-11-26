@@ -166,11 +166,8 @@ class PurchaseRequest extends AbstractRequest
         return $data;
     }
 
-    public function send()
+    public function sendData($data)
     {
-
-        $data = $this->getData();
-
         $document = new DOMDocument('1.0', 'UTF-8');
 
 
