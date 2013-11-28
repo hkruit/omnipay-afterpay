@@ -23,11 +23,17 @@
             "homepage": "https://github.com/omnipay/afterpay/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/benjamindavid/omnipay-common.git"
+        }
+    ],
     "autoload": {
         "psr-0": { "Omnipay\\AfterPay\\" : "src/" }
     },
     "require": {
-        "omnipay/common": "~2.0"
+        "omnipay/common": "dev-master"
     },
     "require-dev": {
         "omnipay/tests": "~2.0"
