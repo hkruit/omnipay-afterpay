@@ -124,7 +124,7 @@ class PurchaseRequest extends AbstractRequest
 
         // birthday format : 1985-01-24T06:00:00
 
-        $data->b2corder->b2cbilltoAddress->referencePerson->dateofbirth = $this->getCard()->getBirthday();
+        $data->b2corder->b2cbilltoAddress->referencePerson->dateofbirth = $this->getCard()->getBirthday('c');
 
         $data->b2corder->b2cbilltoAddress->referencePerson->emailaddress = $this->getCard()->getEmail();
 
@@ -149,7 +149,7 @@ class PurchaseRequest extends AbstractRequest
 
         // birthday format : 1985-01-24T06:00:00
 
-        $data->b2corder->b2cshiptoAddress->referencePerson->dateofbirth = $this->getCard()->getBirthday();
+        $data->b2corder->b2cshiptoAddress->referencePerson->dateofbirth = $this->getCard()->getBirthday('c');
 
         $data->b2corder->b2cshiptoAddress->referencePerson->emailaddress = $this->getCard()->getEmail();
 
