@@ -56,6 +56,16 @@ class PurchaseRequest extends AbstractRequest
     {
         return $this->setParameter('portfolioId', $value);
     }
+    
+    public function getDescription()
+    {
+        return $this->getParameter('description');
+    }
+
+    public function setDescription($value)
+    {
+        return $this->setParameter('description', $value);
+    }
 
     public function getData()
     {
@@ -95,7 +105,7 @@ class PurchaseRequest extends AbstractRequest
 
         // b2corder : orderline
 
-        $data->b2corder->orderlines->articleDescription = 'Description';
+        $data->b2corder->orderlines->articleDescription = $this->getDescription();
         $data->b2corder->orderlines->articleId = 1;
         $data->b2corder->orderlines->quantity = 1;
         $data->b2corder->orderlines->unitprice = $this->getAmountInteger();
