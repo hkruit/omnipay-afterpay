@@ -59,7 +59,7 @@ class PurchaseRequest extends AbstractRequest
     
     public function getDescription()
     {
-        return $this->getParameter('description');
+        return $this->getParameter('description') ?: 'Description';
     }
 
     public function setDescription($value)
